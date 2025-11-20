@@ -1,0 +1,413 @@
+main {
+    position: relative;
+}
+
+main>:first-child img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.slick-slide {
+    box-sizing: border-box;
+}
+
+.slider div {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.slider div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main>div>:last-child {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 95%;
+}
+
+main>div>:last-child h1 {
+    padding: 8px;
+    background-color: white;
+    color: #f90d0d;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    display: inline-block;
+}
+
+main>div>:last-child h2 {
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.home {
+    background-color: antiquewhite;
+}
+
+.home>div>div>section {
+    width: 30%;
+    padding: 10px;
+    color: white;
+    background-color: #f90d0d;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.home>div>div>section:hover {
+    border-radius: 15px;
+}
+
+.home>div>div>section h3 {
+    text-align: center;
+}
+
+.home>:first-child>h3 {
+    margin: 20px 0;
+}
+
+.home>:last-child img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.home>div>ul li {
+    margin: 20px 0;
+}
+
+.about {
+    background-color: #021e3a;
+    color: white;
+}
+
+.about>div>h1 {
+    color: #f90d0d;
+}
+
+.about>div>h3 {
+    margin: 20px 0 50px;
+}
+
+.about>div>ul li {
+    margin: 20px 0;
+}
+
+.about>:last-child {
+    width: 100%;
+    height: 300px;
+    background-image: url('/images/about_bg.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about2 {
+    background-color: antiquewhite;
+}
+
+.about2>:first-child {
+    padding-bottom: 10px;
+}
+
+.about2>div>h1 {
+    color: #f90d0d;
+}
+
+.about2>div>h3:first-of-type {
+    margin: 20px 0 30px;
+    color: black;
+}
+
+.about2>div>h3:last-of-type {
+    color: #f90d0d;
+}
+
+.gallery {
+    background-color: antiquewhite;
+}
+
+.gallery>div>div,
+.gallery>div>div>div,
+.gallery>div>div>div>div,
+.gallery>div>div>div>div>div,
+.gallery>div>div>div>div>div>div {
+    gap: 10px;
+    overflow: hidden;
+}
+
+.gallery>div>div img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.gallery>div>div img:hover {
+    transform: scale(1.2);
+}
+
+.gallery .intro> :first-child>div img {
+    height: 100%;
+    min-height: 200px;
+}
+
+.gallery .intro> :last-child>:first-child {
+    width: 45%;
+}
+
+.gallery .intro> :last-child>:first-child img {
+    height: 100%;
+}
+
+.gallery .intro> :last-child>:last-child {
+    width: 55%;
+}
+
+.gallery .intro> :last-child>:last-child div:first-of-type {
+    margin-bottom: 10px;
+}
+
+.gallery .about-g>:nth-child(2) div img {
+    height: 100%;
+    min-height: 150px;
+}
+
+.gallery .about-g>:nth-child(2) div:first-of-type img {
+    transform: scale(1.4) translateY(10%);
+}
+
+.gallery .about-g>:nth-child(2) div:first-of-type img:hover {
+    transform: scale(1.7) translateY(10%);
+}
+
+.gallery .about-g>:nth-child(2) div:last-of-type img {
+    transform: scale(1.4);
+}
+
+.gallery .about-g>:nth-child(2) div:last-of-type img:hover {
+    transform: scale(1.6);
+}
+
+.gallery .about-g> :last-child>:first-child {
+    width: 45%;
+}
+
+.gallery .about-g> :last-child>:first-child img {
+    height: 100%;
+    min-height: 120px;
+}
+
+.gallery .about-g> :last-child>:last-child {
+    width: 55%;
+}
+
+.gallery .about-g> :last-child>:last-child img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery .about-g> :last-child>:first-child div:first-of-type {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+    main>:first-child img {
+        height: 800px;
+    }
+
+    .slider div {
+        height: 800px;
+    }
+
+    main>div>:last-child {
+        bottom: 15%;
+        width: 84%;
+    }
+
+    main>div>:last-child h1 {
+        padding: 8px 15px 15px;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    main>div>:last-child h2 {
+        font-size: 1.8rem;
+    }
+
+    .home>div>div>section {
+        padding: 30px;
+        border-radius: 8px;
+    }
+
+    .home>div>div>section:hover {
+        border-radius: 30px;
+    }
+
+    .home>div>div>section h3 {
+        font-size: 1.5rem;
+    }
+
+    .home>:first-child>h3 {
+        margin: 40px 0;
+        font-size: 1.3rem;
+    }
+
+
+    .about>div>h3 {
+        margin: 20px 0 30px;
+    }
+
+    .about>:last-child {
+        width: 100%;
+        height: 300px;
+        background-image: url('/images/about_bg.jpg');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .about2 {
+        background-color: antiquewhite;
+    }
+
+    .about2>div>h3 {
+        color: #f90d0d;
+        margin: 20px 0 30px
+    }
+
+    .gallery>div>div,
+    .gallery>div>div>div,
+    .gallery>div>div>div>div,
+    .gallery>div>div>div>div>div,
+    .gallery>div>div>div>div>div>div {
+        gap: 20px;
+    }
+
+    .gallery .intro> :first-child>div img {
+        height: 100%;
+        min-height: 250px;
+    }
+
+    .gallery .intro> :last-child>:last-child div:first-of-type {
+        margin-bottom: 20px;
+    }
+
+    .gallery .about-g>:nth-child(2) div img {
+        height: 100%;
+        min-height: 200px;
+    }
+
+    .gallery .about-g> :last-child>:first-child img {
+        height: 100%;
+        min-height: 200px;
+    }
+
+    .gallery .about-g> :last-child>:first-child div:first-of-type {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1366px) {
+
+    main>div>:last-child h1 {
+        padding: 8px 15px 15px;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    main>div>:last-child h2 {
+        font-size: 1.8rem;
+    }
+
+    .home>div>div>section {
+        padding: 30px;
+        border-radius: 8px;
+    }
+
+    .home>div>div>section:hover {
+        border-radius: 30px;
+    }
+
+    .home>div>div>section h3 {
+        font-size: 1.5rem;
+    }
+
+    .home>:first-child>h3 {
+        margin: 40px 0;
+        font-size: 1.3rem;
+    }
+
+
+    .about>div>h3 {
+        margin: 20px 0 30px;
+    }
+
+    .about>:last-child {
+        width: 100%;
+        height: 300px;
+        background-image: url('/images/about_bg.jpg');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .about2 {
+        background-color: antiquewhite;
+    }
+
+    .about2>div>h3 {
+        color: #f90d0d;
+        margin: 20px 0 30px
+    }
+
+    .gallery>div>div,
+    .gallery>div>div>div,
+    .gallery>div>div>div>div,
+    .gallery>div>div>div>div>div,
+    .gallery>div>div>div>div>div>div {
+        gap: 20px;
+    }
+
+    .gallery .intro> :first-child>div img {
+        height: 100%;
+        min-height: 250px;
+    }
+
+    .gallery .intro> :last-child>:last-child div:first-of-type {
+        margin-bottom: 20px;
+    }
+
+    .gallery .about-g>:nth-child(2) div img {
+        height: 100%;
+        min-height: 200px;
+    }
+
+    .gallery .about-g> :last-child>:first-child img {
+        height: 100%;
+        min-height: 200px;
+    }
+
+    .gallery .about-g> :last-child>:first-child div:first-of-type {
+        margin-bottom: 20px;
+    }
+
+}

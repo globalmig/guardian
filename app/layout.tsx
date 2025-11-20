@@ -1,0 +1,45 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import "./style.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "가디언엔젤스 코리아",
+  description: "가디언엔젤스 코리아입니다.",
+  openGraph: {
+    title: '가디언엔젤스 코리아',
+    description: '가디언엔젤스 코리아',
+    url: 'https://www..com',
+    siteName: 'Guardian Angels Korea',
+    images: [
+      {
+        url: 'https://www..com/images/og_image.jpg',
+        width: 1200,
+        height: 630,
+        alt: '가디언엔젤스 코리아',
+      },
+    ],
+    locale: 'ko_KR',
+    type: 'website',
+  },
+  other: {
+    'naver-site-verification': '',
+  }
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="ko">
+      <body>
+        <Header/>
+        {children}
+        <Footer/>
+      </body>
+    </html>
+  );
+}
