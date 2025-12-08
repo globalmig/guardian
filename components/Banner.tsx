@@ -18,7 +18,7 @@ export default function Banner() {
                         <MainSlide />
                         <div>
                             <h1>We are the Guardian Angels</h1>
-                            <h2>JOIN US TO HELP KEEP YOUR COMMUNITY SAFE. </h2>
+                            <h2>지역 사회의 안전을 지키기 위해 함께합니다.</h2>
                         </div>
                     </div>
                 </main>
@@ -32,7 +32,7 @@ export default function Banner() {
                          </div>
                         <div>
                             <h1>We are the Guardian Angels</h1>
-                            <h2>JOIN US TO HELP KEEP YOUR COMMUNITY SAFE. </h2>
+                            <h2>가디언엔젤스를 소개합니다.</h2>
                         </div>
                     </div>
                 </main>

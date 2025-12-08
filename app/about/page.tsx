@@ -9,23 +9,24 @@ export default function AboutPage() {
             <article className="about">
                 <div>
                     <h1>About The Guardian Angels </h1>
-                    <h3>The Alliance of Guardian Angels is a non-profit 501 (c) (3) organization founded in 1979 in New York City, New York. Our mission is to provide positive role models for today’s youth and work toward promoting community safety and betterment for the good of society overall.</h3>
+                    <h3>가디언엔젤스 연합(Alliance of Guardian Angels)은 1979년 뉴욕주 뉴욕시에서 설립된 비영리 501(c)(3) 단체입니다. 저희의 사명은 오늘날 청소년들에게 긍정적인 롤모델을 제공하고, 지역 사회의 안전과 발전을 증진하여 사회 전체의 이익을 증진하는 것입니다.  </h3>
                     <ul>
-                        <li>The Guardian Angels are dedicated to fostering safer, stronger, and more compassionate communities through volunteer-driven initiatives. We serve those in need by organizing homeless feedings, mentoring youth through positive leadership programs, offering self-defense courses, and conducting unarmed community patrols to ensure the safety of seniors and vulnerable individuals.</li>
-                        <li>We accomplish our mission through training volunteers, who are multi racial, to be effective as visual deterrents patrolling the streets in communities around the world. Our emphasis is on coordinating a variety of community-based services, programs and activities to speak and fight against violence, crime and drugs.</li>
-                        <li>Our philosophy is to empower individuals through service to others.  An empowered society is built through empowering individuals one at a time.  We train people to take constructive and cooperative action to solve individual and social problems.  We provide people with the tools, support, and opportunities to face their unique challenges and fulfill their unique interests and goals.  We are unlike any other organization in the breadth and depth of empowering skills we develop.</li>
-                        <li>Our focus is on building relationships whether interpersonal or organizational.  We are one of the few organizations in the world to open our doors to people regardless of race, ethnicity, nationality, gender, age, disability, religion, political view, and sexual orientation.  We are a “street-roots” organization that provides hope, security, and opportunity to those who are otherwise forgotten, oppressed, harassed, discriminated against, disenfranchised, set back, or impoverished. </li>
+                        <li>가디언 엔젤스는 자원봉사 중심의 활동을 통해 더욱 안전하고, 강하고, 따뜻한 공동체를 조성하는 데 헌신합니다. 노숙자 급식, 긍정적 리더십 프로그램을 통한 청소년 멘토링, 자기방어 교육, 그리고 노인과 취약 계층의 안전을 위한 비무장 지역 순찰을 통해 도움이 필요한 사람들을 지원합니다.</li>
+                        <li>저희는 다양한 인종으로 구성된 자원봉사자들을 훈련하여 전 세계 지역 사회의 거리를 순찰하는 시각적 단속 요원으로 효과적으로 활동할 수 있도록 함으로써 사명을 달성합니다. 저희는 폭력, 범죄, 마약에 맞서 목소리를 내고 싸우기 위해 다양한 지역 사회 기반 서비스, 프로그램, 활동을 조율하는 데 중점을 두고 있습니다.</li>
+                        <li>저희의 철학은 타인을 위한 봉사를 통해 개인에게 힘을 실어주는 것입니다. 힘이 넘치는 사회는 한 사람 한 사람에게 힘을 실어줄 때 구축됩니다. 저희는 사람들이 개인적, 사회적 문제를 해결하기 위해 건설적이고 협력적인 행동을 취할 수 있도록 교육합니다. 또한, 각자의 고유한 어려움에 맞서고 고유한 관심사와 목표를 달성할 수 있도록 도구, 지원, 그리고 기회를 제공합니다. 저희는 다른 어떤 조직과도 비교할 수 없을 만큼 폭넓고 깊이 있는 힘을 실어주는 기술을 개발합니다.</li>
+                        <li>저희는 대인 관계든 조직 관계든 관계 구축에 중점을 둡니다. 저희는 인종, 민족, 국적, 성별, 나이, 장애, 종교, 정치적 견해, 성적 지향에 관계없이 누구에게나 문을 여는 세계에서 몇 안 되는 단체 중 하나입니다. 저희는 소외되고, 억압받고, 괴롭힘을 당하고, 차별받고, 권리를 박탈당하고, 소외되거나, 빈곤에 처한 사람들에게 희망과 안정, 그리고 기회를 제공하는 "거리에 뿌리를 둔" 단체입니다.</li>
                     </ul>
                 </div>
                 {/* <div></div> */}
             </article>
             <article className="about2">
                 <div>
-                    <h1>Dare to Care about your Community</h1>
+                    <h1>지역 사회에 대한 관심을 가져보세요.</h1>
                     <h3>
-                        The Guardian Angels help solve any kind of community problem. No matter on duty or not, we provide assistance to anyone in need. Often times, we provide medical assistance while on patrol or we might help someone look for a missing person.  We will also help publicize problems and promote causes that have been neglected or overlooked. Whenever a community or individuals are unable to address or solve problems through conventional means, we offer our services and support.  
+                        가디언엔젤스는 모든 종류의 지역 사회 문제 해결을 돕습니다. 근무 여부와 관계없이, 도움이 필요한 모든 사람에게 도움을 제공합니다. 순찰 중 의료 지원을 제공하거나 실종자 수색을 돕기도 합니다. 또한, 문제를 알리고 소홀히 되거나 간과되었던 문제들을 홍보합니다. 지역 사회나 개인이 기존의 방식으로 문제를 해결하지 못할 때, 우리는 필요한 서비스와 지원을 제공합니다.    
                     </h3>
-                    <h3>"Instead of relying on others to resolve a community issue, the Guardian Angels help people recognize that they should be turning to themselves. Together, those willing to fight for one another are most capable of solving their community’s problems."</h3>
+                    <h3>"가디언엔젤스는 공동체 문제를 해결하기 위해 타인에게 의존하는 대신, 사람들이 스스로에게 의지해야 한다는 것을 깨닫도록 돕습니다. 서로를 위해 기꺼이 싸우려는 사람들이 힘을 합칠 때, 공동체의 문제를 가장 효과적으로 해결할 수 있습니다."</h3>
+                    <p>-커티스 슬리와, 창립자 겸 사장.</p>
                     <Gallery/>
                 </div>
             </article>

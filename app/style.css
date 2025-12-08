@@ -50,7 +50,7 @@ main>div>:last-child {
 main>div>:last-child h1 {
     padding: 8px;
     background-color: white;
-    color: #f90d0d;
+    color: #da0505;
     font-size: 1.7rem;
     line-height: 1.7rem;
     display: inline-block;
@@ -72,7 +72,7 @@ main>div>:last-child h2 {
     width: 30%;
     padding: 10px;
     color: white;
-    background-color: #f90d0d;
+    background-color: #da0505;
     border-radius: 3px;
     display: flex;
     justify-content: center;
@@ -113,7 +113,7 @@ main>div>:last-child h2 {
 .home>:last-child>:last-child {
     text-align: right;
     position: absolute;
-    bottom: 20%;
+    bottom: 25%;
     right: 0%;
     transform: translate(-5%, 50%);
     width: 95%;
@@ -122,10 +122,11 @@ main>div>:last-child h2 {
 .home>:last-child>:last-child h1 {
     padding: 8px;
     background-color: white;
-    color: #f90d0d;
-    font-size: 1.7rem;
-    line-height: 1.7rem;
+    color: #da0505;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     display: inline-block;
+    margin: 3px 0;
 }
 
 .home>:last-child>:last-child h2 {
@@ -141,7 +142,7 @@ main>div>:last-child h2 {
 .home2>div>:first-child h1 {
     padding: 8px;
     background-color: white;
-    color: #f90d0d;
+    color: #da0505;
     font-size: 1.7rem;
     line-height: 1.7rem;
     display: inline-block;
@@ -158,6 +159,22 @@ main>div>:last-child h2 {
     margin-top: 50px;
 }
 
+.home2>div>:last-child {
+    margin: 40px auto 0;
+}
+
+.loading {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.loading p {
+    font-style: italic;
+}
+
 /* about */
 
 .about {
@@ -166,7 +183,7 @@ main>div>:last-child h2 {
 }
 
 .about>div>h1 {
-    color: #f90d0d;
+    color: #da0505;
 }
 
 .about>div>h3 {
@@ -192,7 +209,7 @@ main>div>:last-child h2 {
 }
 
 .about2>div>h1 {
-    color: #f90d0d;
+    color: #da0505;
 }
 
 .about2>div>h3:first-of-type {
@@ -201,11 +218,15 @@ main>div>:last-child h2 {
 }
 
 .about2>div>h3:last-of-type {
-    color: #f90d0d;
+    color: #da0505;
+    text-align: center;
 }
 
-.about2>div>:last-child {
-    margin-top: 50px;
+.about2>div>p {
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 50px;
+    font-style: italic;
 }
 
 /* gallery */
@@ -224,6 +245,7 @@ main>div>:last-child h2 {
     height: auto;
     object-fit: cover;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .gallery>div>div img:hover {
@@ -302,6 +324,35 @@ main>div>:last-child h2 {
     margin-bottom: 10px;
 }
 
+.scale-galley {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 40px 8%;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+
+.scale-galley>:first-child {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 40px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.scale-galley>:first-child img {
+    width: 20px;
+    height: auto;
+}
+
+.scale-galley>:last-child img {
+    width: 100%;
+    height: auto;
+}
+
 @media screen and (min-width: 768px) {
 
     main>:first-child img {
@@ -355,6 +406,10 @@ main>div>:last-child h2 {
         margin-top: 70px;
     }
 
+    .home>:last-child>:last-child {
+        bottom: 35%
+    }
+
     .home>:last-child>:last-child h1 {
         padding: 8px 15px 15px;
         font-size: 2.5rem;
@@ -381,8 +436,8 @@ main>div>:last-child h2 {
         margin: 20px 0 30px;
     }
 
-    .about2>div>:last-child {
-        margin-top: 70px;
+    .about>div>p {
+        margin-bottom: 70px;
     }
 
     /* gallery */
@@ -437,6 +492,10 @@ main>div>:last-child h2 {
         margin-bottom: 20px;
     }
 
+    .scale-galley>:first-child img {
+        width: 30px;
+    }
+
 }
 
 @media screen and (min-width: 1366px) {
@@ -469,7 +528,7 @@ main>div>:last-child h2 {
     /* home */
 
     .home>div>div>section {
-        padding: 50px;
+        padding: 40px;
         border-radius: 15px;
     }
 
@@ -479,6 +538,10 @@ main>div>:last-child h2 {
 
     .home>div>div>section h3 {
         font-size: 2rem;
+    }
+
+    .home>div>div>section h3 span {
+        font-size: 1.5rem;
     }
 
     .home>:first-child>h3 {
@@ -492,12 +555,16 @@ main>div>:last-child h2 {
     }
 
     .home>:last-child img {
-        height: 700px;
+        height: 800px;
+    }
+
+    .home>:last-child>:last-child {
+        bottom: 25%
     }
 
     .home>:last-child>:last-child h1 {
-        font-size: 4.5rem;
-        line-height: 4.5rem;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
     }
 
     .home>:last-child>:last-child h2 {
@@ -514,7 +581,7 @@ main>div>:last-child h2 {
     }
 
     .home2>div>:first-child p {
-         font-size: 1.2rem;
+        font-size: 1.2rem;
     }
 
     /* about */
