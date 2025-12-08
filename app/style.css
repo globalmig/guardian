@@ -96,10 +96,6 @@ main>div>:last-child h2 {
     margin: 20px 0;
 }
 
-.home>:first-child>:last-child {
-    margin-top: 50px;
-}
-
 .home>:last-child {
     position: relative;
 }
@@ -400,10 +396,6 @@ main>div>:last-child h2 {
     .home>:first-child>h3 {
         margin: 40px 0;
         font-size: 1.3rem;
-    }
-
-    .home>:first-child>:last-child {
-        margin-top: 70px;
     }
 
     .home>:last-child>:last-child {
