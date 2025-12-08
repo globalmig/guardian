@@ -10,7 +10,7 @@ export default function Gallery() {
     const isAbout = category === "about";
 
     return (
-        <article className="gallery">
+        <div className="gallery">
             <div>
 
                 {isAbout ?
@@ -18,16 +18,18 @@ export default function Gallery() {
                         <div>
                             <Image src="/images/gallery_9.jpg" alt="갤러리" width={1272} height={715} />
                         </div>
-                        <div className="display-flex">
-                            <div>
-                                <Image src="/images/gallery_10.jpg" alt="갤러리" width={1272} height={715} />
-                            </div>
-                            <div>
-                                <Image src="/images/gallery_11.jpg" alt="갤러리" width={1272} height={715} />
-                            </div>
-                        </div>
                         <div>
-                            <Image src="/images/gallery_12.jpg" alt="갤러리" width={1272} height={715} />
+                            <div className="display-flex">
+                                <div>
+                                    <Image src="/images/gallery_10.jpg" alt="갤러리" width={1272} height={715} />
+                                </div>
+                                <div>
+                                    <Image src="/images/gallery_11.jpg" alt="갤러리" width={1272} height={715} />
+                                </div>
+                            </div>
+                            <div>
+                                <Image src="/images/gallery_12.jpg" alt="갤러리" width={1272} height={715} />
+                            </div>
                         </div>
                         <div className="display-flex">
                             <div>
@@ -44,16 +46,18 @@ export default function Gallery() {
                         </div>
                     </div>
                     : <div className="intro display-flex-flow">
-                        <div className="display-flex">
-                            <div>
-                                <Image src="/images/gallery_1.jpg" alt="갤러리" width={1272} height={715} />
-                            </div>
-                            <div>
-                                <Image src="/images/gallery_2.jpg" alt="갤러리" width={1272} height={715} />
-                            </div>
-                        </div>
                         <div>
-                            <Image src="/images/gallery_3.jpg" alt="갤러리" width={1272} height={715} />
+                            <div className="display-flex">
+                                <div>
+                                    <Image src="/images/gallery_1.jpg" alt="갤러리" width={1272} height={715} />
+                                </div>
+                                <div>
+                                    <Image src="/images/gallery_2.jpg" alt="갤러리" width={1272} height={715} />
+                                </div>
+                            </div>
+                            <div>
+                                <Image src="/images/gallery_3.jpg" alt="갤러리" width={1272} height={715} />
+                            </div>
                         </div>
                         <div>
                             <div>
@@ -80,6 +84,6 @@ export default function Gallery() {
                 }
 
             </div>
-        </article>
+        </div>
     )
 }

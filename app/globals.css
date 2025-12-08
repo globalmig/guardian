@@ -242,7 +242,7 @@ footer>div>:last-child button a {
     font-size: 1rem;
 }
 
-footer>div>:last-child button:hover{
+footer>div>:last-child button:hover {
     background-color: #6574ff;
 }
 
@@ -314,6 +314,16 @@ footer>div>:last-child button:hover{
         height: auto;
     }
 
+    footer>div>:last-child button {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    footer>div>:last-child button a {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
 }
 
 @media screen and (min-width: 1366px) {
@@ -374,11 +384,11 @@ footer>div>:last-child button:hover{
     }
 
     footer>div>:first-child {
-        width: 150px;
+        width: 200px;
     }
 
     footer>div>ul {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     footer>div>ul li {
@@ -411,6 +421,15 @@ footer>div>:last-child button:hover{
 
     footer>div> :nth-child(3)>div a div img {
         width: 25px;
+    }
+
+    footer>div>:last-child {
+        margin-top: -80px;
+        text-align: right;
+    }
+
+    footer>div>:last-child button {
+        width: 580px;
     }
 
 }

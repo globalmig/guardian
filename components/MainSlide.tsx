@@ -29,16 +29,16 @@ export default function MainSlide() {
     return(
         <Slider {...settings} className="slider">
             <div>
-                <Image src="/images/banner_1.jpg" alt="배너1" width={1272} height={715} priority/>
+                <Image src="/images/banner_1.jpg" alt="배너1" width={1272} height={715} priority quality={100}/>
             </div>
             <div>
-                <Image src="/images/banner_2.jpg" alt="배너2" width={1272} height={715} priority/>
+                <Image src="/images/banner_2.jpg" alt="배너2" width={1272} height={715} priority quality={100}/>
             </div>
             <div>
-                <Image src="/images/banner_3.jpg" alt="배너3" width={1272} height={715} priority/>
+                <Image src="/images/banner_3.jpg" alt="배너3" width={1272} height={715} priority quality={100}/>
             </div>
             <div>
-                <Image src="/images/banner_4.jpg" alt="배너4" width={1272} height={715} priority/>
+                <Image src="/images/banner_4.jpg" alt="배너4" width={1272} height={715} priority quality={100}/>
             </div>
         </Slider>
     )

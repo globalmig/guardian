@@ -15,7 +15,7 @@ export default function Banner() {
             {isHome ?
                 <main>
                     <div>
-                        <MainSlide/>
+                        <MainSlide />
                         <div>
                             <h1>We are the Guardian Angels</h1>
                             <h2>JOIN US TO HELP KEEP YOUR COMMUNITY SAFE. </h2>
@@ -26,8 +26,10 @@ export default function Banner() {
                 <main>
                     <div>
                         <div>
-                            <Image src="/images/main-banner.jpg" alt="배너" width={1275} height={715} />
-                        </div>
+                            <video autoPlay={true} muted={true} loop={true}>
+                                <source src="/images/main-banner.mp4" type="video/mp4" />
+                            </video>
+                         </div>
                         <div>
                             <h1>We are the Guardian Angels</h1>
                             <h2>JOIN US TO HELP KEEP YOUR COMMUNITY SAFE. </h2>

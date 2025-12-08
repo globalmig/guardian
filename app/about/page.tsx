@@ -17,7 +17,7 @@ export default function AboutPage() {
                         <li>Our focus is on building relationships whether interpersonal or organizational.  We are one of the few organizations in the world to open our doors to people regardless of race, ethnicity, nationality, gender, age, disability, religion, political view, and sexual orientation.  We are a “street-roots” organization that provides hope, security, and opportunity to those who are otherwise forgotten, oppressed, harassed, discriminated against, disenfranchised, set back, or impoverished. </li>
                     </ul>
                 </div>
-                <div></div>
+                {/* <div></div> */}
             </article>
             <article className="about2">
                 <div>
@@ -26,9 +26,9 @@ export default function AboutPage() {
                         The Guardian Angels help solve any kind of community problem. No matter on duty or not, we provide assistance to anyone in need. Often times, we provide medical assistance while on patrol or we might help someone look for a missing person.  We will also help publicize problems and promote causes that have been neglected or overlooked. Whenever a community or individuals are unable to address or solve problems through conventional means, we offer our services and support.  
                     </h3>
                     <h3>"Instead of relying on others to resolve a community issue, the Guardian Angels help people recognize that they should be turning to themselves. Together, those willing to fight for one another are most capable of solving their community’s problems."</h3>
+                    <Gallery/>
                 </div>
             </article>
-            <Gallery/>
         </>
 
     )

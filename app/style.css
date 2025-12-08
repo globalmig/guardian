@@ -2,10 +2,21 @@ main {
     position: relative;
 }
 
+main>:first-child {
+    position: relative;
+}
+
 main>:first-child img {
     width: 100%;
     height: 600px;
     object-fit: cover;
+}
+
+main>:first-child video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .slick-slide {
@@ -51,6 +62,8 @@ main>div>:last-child h2 {
     margin-top: 10px;
 }
 
+/* home */
+
 .home {
     background-color: antiquewhite;
 }
@@ -79,15 +92,73 @@ main>div>:last-child h2 {
     margin: 20px 0;
 }
 
+.home>div>ul li {
+    margin: 20px 0;
+}
+
+.home>:first-child>:last-child {
+    margin-top: 50px;
+}
+
+.home>:last-child {
+    position: relative;
+}
+
 .home>:last-child img {
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
 
-.home>div>ul li {
-    margin: 20px 0;
+.home>:last-child>:last-child {
+    text-align: right;
+    position: absolute;
+    bottom: 20%;
+    right: 0%;
+    transform: translate(-5%, 50%);
+    width: 95%;
 }
+
+.home>:last-child>:last-child h1 {
+    padding: 8px;
+    background-color: white;
+    color: #f90d0d;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    display: inline-block;
+}
+
+.home>:last-child>:last-child h2 {
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.home2 {
+    background-color: #021e3a;
+}
+
+.home2>div>:first-child h1 {
+    padding: 8px;
+    background-color: white;
+    color: #f90d0d;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    display: inline-block;
+}
+
+.home2>div>:first-child h2 {
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.home2>div>:first-child p {
+    color: white;
+    margin-top: 50px;
+}
+
+/* about */
 
 .about {
     background-color: #021e3a;
@@ -106,7 +177,7 @@ main>div>:last-child h2 {
     margin: 20px 0;
 }
 
-.about>:last-child {
+/* .about>:last-child {
     width: 100%;
     height: 300px;
     background-image: url('/images/about_bg.jpg');
@@ -114,14 +185,10 @@ main>div>:last-child h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
+} */
 
 .about2 {
     background-color: antiquewhite;
-}
-
-.about2>:first-child {
-    padding-bottom: 10px;
 }
 
 .about2>div>h1 {
@@ -137,9 +204,11 @@ main>div>:last-child h2 {
     color: #f90d0d;
 }
 
-.gallery {
-    background-color: antiquewhite;
+.about2>div>:last-child {
+    margin-top: 50px;
 }
+
+/* gallery */
 
 .gallery>div>div,
 .gallery>div>div>div,
@@ -161,9 +230,13 @@ main>div>:last-child h2 {
     transform: scale(1.2);
 }
 
-.gallery .intro> :first-child>div img {
+.gallery .intro> :first-child>:first-child div img {
     height: 100%;
-    min-height: 200px;
+    min-height: 150px;
+}
+
+.gallery .intro> :first-child>:last-child {
+    margin-top: 10px;
 }
 
 .gallery .intro> :last-child>:first-child {
@@ -182,25 +255,29 @@ main>div>:last-child h2 {
     margin-bottom: 10px;
 }
 
-.gallery .about-g>:nth-child(2) div img {
+.gallery .about-g>:nth-child(2)>:first-child div img {
     height: 100%;
     min-height: 150px;
 }
 
-.gallery .about-g>:nth-child(2) div:first-of-type img {
+.gallery .about-g>:nth-child(2)>:first-child div:first-of-type img {
     transform: scale(1.4) translateY(10%);
 }
 
-.gallery .about-g>:nth-child(2) div:first-of-type img:hover {
+.gallery .about-g>:nth-child(2)>:first-child div:first-of-type img:hover {
     transform: scale(1.7) translateY(10%);
 }
 
-.gallery .about-g>:nth-child(2) div:last-of-type img {
+.gallery .about-g>:nth-child(2)>:first-child div:last-of-type img {
     transform: scale(1.4);
 }
 
-.gallery .about-g>:nth-child(2) div:last-of-type img:hover {
+.gallery .about-g>:nth-child(2)>:first-child div:last-of-type img:hover {
     transform: scale(1.6);
+}
+
+.gallery .about-g>:nth-child(2)>:last-child {
+    margin-top: 10px;
 }
 
 .gallery .about-g> :last-child>:first-child {
@@ -231,6 +308,10 @@ main>div>:last-child h2 {
         height: 800px;
     }
 
+    main>:first-child video {
+        height: 800px;
+    }
+
     .slider div {
         height: 800px;
     }
@@ -250,6 +331,8 @@ main>div>:last-child h2 {
         font-size: 1.8rem;
     }
 
+    /* home */
+
     .home>div>div>section {
         padding: 30px;
         border-radius: 8px;
@@ -268,29 +351,41 @@ main>div>:last-child h2 {
         font-size: 1.3rem;
     }
 
+    .home>:first-child>:last-child {
+        margin-top: 70px;
+    }
+
+    .home>:last-child>:last-child h1 {
+        padding: 8px 15px 15px;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .home>:last-child>:last-child h2 {
+        font-size: 1.8rem;
+    }
+
+    .home2>div>:first-child h1 {
+        padding: 8px 15px 15px;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .home2>div>:first-child h2 {
+        font-size: 1.8rem;
+    }
+
+    /* about */
 
     .about>div>h3 {
         margin: 20px 0 30px;
     }
 
-    .about>:last-child {
-        width: 100%;
-        height: 300px;
-        background-image: url('/images/about_bg.jpg');
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
+    .about2>div>:last-child {
+        margin-top: 70px;
     }
 
-    .about2 {
-        background-color: antiquewhite;
-    }
-
-    .about2>div>h3 {
-        color: #f90d0d;
-        margin: 20px 0 30px
-    }
+    /* gallery */
 
     .gallery>div>div,
     .gallery>div>div>div,
@@ -300,18 +395,37 @@ main>div>:last-child h2 {
         gap: 20px;
     }
 
-    .gallery .intro> :first-child>div img {
-        height: 100%;
-        min-height: 250px;
+    .gallery .intro> :first-child>:last-child {
+        margin-top: 20px;
     }
 
     .gallery .intro> :last-child>:last-child div:first-of-type {
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
-    .gallery .about-g>:nth-child(2) div img {
+    .gallery .about-g>:nth-child(2)>:first-child div img {
         height: 100%;
-        min-height: 200px;
+        min-height: 300px;
+    }
+
+    .gallery .about-g>:nth-child(2)>:first-child div:first-of-type img {
+        transform: scale(1.3) translateY(12%);
+    }
+
+    .gallery .about-g>:nth-child(2)>:first-child div:first-of-type img:hover {
+        transform: scale(1.6) translateY(12%);
+    }
+
+    .gallery .about-g>:nth-child(2)>:first-child div:last-of-type img {
+        transform: scale(1.3) translateY(10%);
+    }
+
+    .gallery .about-g>:nth-child(2)>:first-child div:last-of-type img:hover {
+        transform: scale(1.6) translateY(10%);
+    }
+
+    .gallery .about-g>:nth-child(2)>:last-child {
+        margin-top: 20px;
     }
 
     .gallery .about-g> :last-child>:first-child img {
@@ -327,19 +441,36 @@ main>div>:last-child h2 {
 
 @media screen and (min-width: 1366px) {
 
+    main>:first-child img {
+        height: 770px;
+    }
+
+    main>:first-child video {
+        height: 770px;
+    }
+
+    .slider div {
+        height: 770px;
+    }
+
+    main>div>:last-child {
+        bottom: 22%;
+    }
+
     main>div>:last-child h1 {
-        padding: 8px 15px 15px;
-        font-size: 2.5rem;
-        line-height: 2.5rem;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
     }
 
     main>div>:last-child h2 {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
 
+    /* home */
+
     .home>div>div>section {
-        padding: 30px;
-        border-radius: 8px;
+        padding: 50px;
+        border-radius: 15px;
     }
 
     .home>div>div>section:hover {
@@ -347,67 +478,163 @@ main>div>:last-child h2 {
     }
 
     .home>div>div>section h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .home>:first-child>h3 {
-        margin: 40px 0;
-        font-size: 1.3rem;
+        margin: 70px 0 50px;
+        font-size: 1.8rem;
     }
 
+    .home>:first-child>ul li {
+        font-size: 1.2rem;
+        margin: 30px 0;
+    }
+
+    .home>:last-child img {
+        height: 700px;
+    }
+
+    .home>:last-child>:last-child h1 {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+
+    .home>:last-child>:last-child h2 {
+        font-size: 2.5rem;
+    }
+
+    .home2>div>:first-child h1 {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+
+    .home2>div>:first-child h2 {
+        font-size: 2.5rem;
+    }
+
+    .home2>div>:first-child p {
+         font-size: 1.2rem;
+    }
+
+    /* about */
+
+    .about>div>h1 {
+        font-size: 2.5rem;
+    }
 
     .about>div>h3 {
-        margin: 20px 0 30px;
+        margin: 20px 0 50px;
+        font-size: 2rem;
     }
 
-    .about>:last-child {
-        width: 100%;
-        height: 300px;
-        background-image: url('/images/about_bg.jpg');
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
+    .about>div>ul li {
+        font-size: 1.2rem;
+        margin: 30px 0;
     }
 
-    .about2 {
-        background-color: antiquewhite;
+    /* .about>:last-child {
+        height: 700px;
+    } */
+
+    .about2>div>h1 {
+        font-size: 2.5rem;
     }
 
-    .about2>div>h3 {
-        color: #f90d0d;
-        margin: 20px 0 30px
+    .about2>div>h3:first-of-type {
+        font-size: 1.8rem;
+        margin: 20px 0 50px;
     }
 
-    .gallery>div>div,
-    .gallery>div>div>div,
-    .gallery>div>div>div>div,
-    .gallery>div>div>div>div>div,
-    .gallery>div>div>div>div>div>div {
-        gap: 20px;
+    .about2>div>h3:last-of-type {
+        margin: 0px;
+        font-size: 1.5rem;
     }
 
-    .gallery .intro> :first-child>div img {
-        height: 100%;
-        min-height: 250px;
+    /* gallery */
+
+    .gallery .intro> :first-child {
+        width: 400px;
     }
 
-    .gallery .intro> :last-child>:last-child div:first-of-type {
+    .gallery .intro> :first-child>:first-child div {
+        height: 150px;
+    }
+
+    .gallery .intro> :first-child>:last-child img {
+        height: 230px;
+    }
+
+    .gallery .intro> :nth-child(2) {
+        width: 360px;
+    }
+
+    .gallery .intro> :nth-child(2)>div {
+        height: 190px;
+    }
+
+    .gallery .intro> :nth-child(2)>:first-child {
         margin-bottom: 20px;
     }
 
-    .gallery .about-g>:nth-child(2) div img {
-        height: 100%;
-        min-height: 200px;
+    .gallery .intro> :last-child {
+        width: 400px;
     }
 
-    .gallery .about-g> :last-child>:first-child img {
-        height: 100%;
-        min-height: 200px;
+    .gallery .intro> :last-child>:first-child {
+        width: 250px;
     }
 
-    .gallery .about-g> :last-child>:first-child div:first-of-type {
-        margin-bottom: 20px;
+    .gallery .intro> :last-child>:last-child div {
+        height: 190px;
+    }
+
+    .gallery .intro> :last-child>:last-child div img {
+        height: 190px;
+    }
+
+    .gallery .about-g>:first-child {
+        width: 350px;
+    }
+
+    .gallery .about-g>:first-child img {
+        height: 400px;
+    }
+
+    .gallery .about-g>:nth-child(2) {
+        width: 400px;
+    }
+
+    .gallery .about-g>:nth-child(2)>:first-child div {
+        height: 150px;
+    }
+
+    .gallery .about-g>:nth-child(2)>:first-child div:first-of-type img {
+        transform: scale(1) translateY(-10%);
+    }
+
+    .gallery .about-g>:nth-child(2)>:first-child div:first-of-type img:hover {
+        transform: scale(1.2) translateY(-10%);
+    }
+
+    .gallery .about-g>:nth-child(2)>:first-child div:last-of-type img {
+        transform: scale(1) translateY(-20%);
+    }
+
+    .gallery .about-g>:nth-child(2)>:first-child div:last-of-type img:hover {
+        transform: scale(1.2) translateY(-20%);
+    }
+
+    .gallery .about-g>:nth-child(2)>:last-child img {
+        height: 230px;
+    }
+
+    .gallery .about-g> :last-child {
+        width: 400px;
+    }
+
+    .gallery .about-g> :last-child>:first-child div {
+        height: 190px;
     }
 
 }
