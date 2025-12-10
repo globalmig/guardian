@@ -660,17 +660,23 @@ main>div>:last-child h2 {
     .home2>div>:last-child {
         display: flex;
         justify-content: space-between;
-        width: 1200px;
         margin-top: 70px;
+    }
+
+    .home2>div>:last-child>:first-child {
+        order: 2;
     }
 
     .home2>div>:last-child>:last-child {
         margin-top: 0;
         margin: auto 0;
+        width: 620px;
+        order: 1;
     }
 
      .home3>:first-child {
         top: 65%;
+        left: 40%;
      }
 
      .home3>:first-child h1 {
