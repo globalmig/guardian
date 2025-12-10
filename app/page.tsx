@@ -54,13 +54,28 @@ export default function Home() {
             <h1>가디언엔젤스와 함께</h1>
             <h2>45주년을 기념합니다.</h2>
           </div>
-
           <div>
-            <Facebook/>
+            <div>
+              <Facebook />
+            </div>
+            <div>
+              <Image src="/images/featured_galley.png" alt="iamge" width={1000} height={758} />
+            </div>
           </div>
 
         </div>
       </article>
+
+      <div className="home3">
+        <div>
+            <h1>Dare to Care</h1>
+            <h2>관심을 갖고 직접 행동합니다.</h2>
+        </div>
+        <div>
+          <Image src="/images/daretocare.jpg" alt="Dare to Care" width={1272} height={715} />
+        </div>
+      </div>
+
     </>
   );
 }

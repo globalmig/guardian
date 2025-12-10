@@ -30,9 +30,9 @@ export default function Banner() {
                                 <source src="/images/main-banner.mp4" type="video/mp4" />
                             </video>
                          </div>
-                        <div>
-                            <h1>We are the Guardian Angels</h1>
-                            <h2>가디언엔젤스를 소개합니다.</h2>
+                        <div className="about-abs">
+                            <h1 className="about-h1">We are the Guardian Angels</h1>
+                            <h2 className="about-h2">가디언엔젤스를 소개합니다.</h2>
                         </div>
                     </div>
                 </main>

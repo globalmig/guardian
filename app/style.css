@@ -14,7 +14,7 @@ main>:first-child img {
 
 main>:first-child video {
     width: 100%;
-    height: 100%;
+    height: 400px;
     object-fit: cover;
     display: block;
 }
@@ -112,22 +112,22 @@ main>div>:last-child h2 {
     bottom: 25%;
     right: 0%;
     transform: translate(-5%, 50%);
-    width: 95%;
 }
 
 .home>:last-child>:last-child h1 {
     padding: 8px;
     background-color: white;
     color: #da0505;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
     display: inline-block;
-    margin: 3px 0;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 5px 0;
 }
 
 .home>:last-child>:last-child h2 {
     color: white;
-    font-size: 1.3rem;
+    display: inline-block;
+    font-size: 1rem;
     margin-top: 10px;
 }
 
@@ -159,6 +159,21 @@ main>div>:last-child h2 {
     margin: 40px auto 0;
 }
 
+.home2>div>:last-child>:first-child {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.home2>div>:last-child>:last-child {
+    margin-top: 50px;
+}
+
+.home2>div>:last-child>:last-child img {
+    width: 100%;
+    height: auto;
+}
+
 .loading {
     text-align: center;
     color: white;
@@ -169,6 +184,47 @@ main>div>:last-child h2 {
 
 .loading p {
     font-style: italic;
+}
+
+.home3 {
+    position: relative;
+}
+
+.home3>:first-child {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+    width: 90%;
+}
+
+.home3>:first-child>div {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10px;
+}
+
+.home3>:first-child>div img {
+    width: 150px;
+    height: auto;
+}
+
+.home3>:first-child h1 {
+    color: white;
+}
+
+.home3>:first-child h2 {
+    background-color: white;
+    color: #da0505;
+    display: inline;
+    font-size: 1.3rem;
+}
+
+.home3>:last-child img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
 }
 
 /* about */
@@ -226,6 +282,10 @@ main>div>:last-child h2 {
 }
 
 /* gallery */
+
+.gallery {
+    margin-top: 70px;
+}
 
 .gallery>div>div,
 .gallery>div>div>div,
@@ -402,6 +462,10 @@ main>div>:last-child h2 {
         bottom: 35%
     }
 
+    .home>:last-child>:last-child h1:first-of-type {
+        display: inline-block;
+    }
+
     .home>:last-child>:last-child h1 {
         padding: 8px 15px 15px;
         font-size: 2.5rem;
@@ -420,6 +484,14 @@ main>div>:last-child h2 {
 
     .home2>div>:first-child h2 {
         font-size: 1.8rem;
+    }
+
+     .home3>:first-child h1 {
+        font-size: 3rem;
+    }
+
+    .home3>:first-child h2 {
+        font-size: 2rem;
     }
 
     /* about */
@@ -446,8 +518,12 @@ main>div>:last-child h2 {
         margin-top: 20px;
     }
 
+    .gallery .intro>:nth-child(2){
+        width: 100%;
+    }
+
     .gallery .intro> :last-child>:last-child div:first-of-type {
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
 
     .gallery .about-g>:nth-child(2)>:first-child div img {
@@ -551,16 +627,21 @@ main>div>:last-child h2 {
     }
 
     .home>:last-child>:last-child {
-        bottom: 25%
+        transform: translate(-30%, 50%);
+        top: 50%;
+        bottom: 25%;
+        display: block;
     }
 
     .home>:last-child>:last-child h1 {
         font-size: 3.5rem;
         line-height: 3.5rem;
+        display: block;
     }
 
     .home>:last-child>:last-child h2 {
         font-size: 2.5rem;
+        display: block;
     }
 
     .home2>div>:first-child h1 {
@@ -574,6 +655,30 @@ main>div>:last-child h2 {
 
     .home2>div>:first-child p {
         font-size: 1.2rem;
+    }
+
+    .home2>div>:last-child {
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+        margin-top: 70px;
+    }
+
+    .home2>div>:last-child>:last-child {
+        margin-top: 0;
+        margin: auto 0;
+    }
+
+     .home3>:first-child {
+        top: 65%;
+     }
+
+     .home3>:first-child h1 {
+        font-size: 4rem;
+     }
+
+    .home3>:first-child h2 {
+        font-size: 2.5rem;
     }
 
     /* about */

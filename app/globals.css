@@ -82,7 +82,7 @@ article>:first-child {
 /* header */
 
 header {
-    padding: 20px 5%;
+    padding: 10px 5%;
     background-color: #021e3a;
     position: relative;
 }
@@ -94,7 +94,7 @@ header>div {
 }
 
 header>div>:first-child img {
-    width: 70px;
+    width: 60px;
     height: auto;
 }
 
@@ -149,6 +149,11 @@ nav ul li a:focus {
 
 header>div>:last-child {
     margin: auto 0;
+}
+
+header>div>:last-child img {
+    width: 25px;
+    height: auto;
 }
 
 /* footer */
