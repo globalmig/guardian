@@ -46,10 +46,10 @@ export default function Facebook() {
         async
         defer
       />
-      {loading &&
+      {/* {loading &&
         <div className="loading">
           <p>Facebook 타임라인을 불러오는 중입니다..</p>
-        </div>}
+        </div>} */}
         <div
           className="fb-page"
           data-href="https://www.facebook.com/theredberets"
