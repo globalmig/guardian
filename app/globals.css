@@ -19,6 +19,7 @@ html {
 body {
     overflow-x: hidden;
     position: relative;
+    background-color: #F8F9FA;
 }
 
 li,
@@ -79,12 +80,29 @@ article>:first-child {
     padding: 80px 5%;
 }
 
+.contents h4 {
+    color: #da0505;
+    margin-bottom: 10px !important;
+}
+
+.contents ul {
+    margin-top: 30px;
+}
+
+.contents ul li {
+    margin: 20px 0;
+}
+
 /* header */
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
     padding: 10px 5%;
-    background-color: #021e3a;
-    position: relative;
+    background-color: #1f272e;
+    width: 100%;
 }
 
 header>div {
@@ -105,7 +123,7 @@ header img {
 nav {
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 70%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
     transition: 0.5s;
@@ -124,8 +142,14 @@ nav {
 nav>:first-child {
     display: flex;
     justify-content: right;
-    padding: 22px 0;
+    padding: 10px 0;
     filter: invert(1);
+}
+
+nav>:first-child img {
+    width: 20px;
+    height: auto;
+    margin: auto 0;
 }
 
 nav ul {
@@ -159,7 +183,7 @@ header>div>:last-child img {
 /* footer */
 
 footer {
-    background-color: #021e3a;
+    background-color: #1f272e;
     color: white;
 }
 
@@ -263,6 +287,22 @@ footer>div>:last-child button:hover {
         padding: 80px 8%;
     }
 
+    .contents h4 {
+        margin-bottom: 20px !important;
+    }
+
+    .contents h3 {
+        font-size: 2rem;
+    }
+
+    .contents ul {
+        margin-top: 40px;
+    }
+
+    .contents ul li {
+        margin: 30px 0;
+    }
+
     /* header */
 
     header {
@@ -360,7 +400,7 @@ footer>div>:last-child button:hover {
     /* header */
 
     header>div>:first-child img {
-        width: 100px;
+        width: 80px;
     }
 
     header>div>ul {
@@ -387,6 +427,8 @@ footer>div>:last-child button:hover {
         padding: 50px 0 80px;
         width: 1200px;
         margin: 0 auto;
+        display: flex;
+        gap: 50px;
     }
 
     footer>div>:first-child {
@@ -394,17 +436,46 @@ footer>div>:last-child button:hover {
     }
 
     footer>div>ul {
-        margin-top: 50px;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     footer>div>ul li {
-        margin: 8px 0;
+        margin: 0px;
+        padding-right: 15px;
+        position: relative;
+    }
+
+    footer>div>ul li::after {
+        content: ' ';
+        position: absolute;
+        width: 1px;
+        height: 10px;
+        background-color: #ddd;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%,-50%);
+    }
+
+    footer>div>ul li span {
+        font-weight: 300;
     }
 
     footer>div>ul li:last-of-type {
         margin-top: 20px;
+        width: 100%;
     }
 
+    footer>div>ul li:nth-last-of-type(2)::after,
+    footer>div>ul li:nth-last-of-type(3)::after,
+    footer>div>ul li:last-of-type::after {
+        width: 0px;
+        height: 0px;
+    }
+
+    /*
     footer>div> :nth-child(3) {
         display: flex;
         justify-content: right;
@@ -437,5 +508,6 @@ footer>div>:last-child button:hover {
     footer>div>:last-child button {
         width: 580px;
     }
+    */
 
 }

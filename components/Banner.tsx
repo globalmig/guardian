@@ -17,8 +17,8 @@ export default function Banner() {
                     <div>
                         <MainSlide />
                         <div>
-                            <h1>We are the Guardian Angels</h1>
-                            <h2>지역 사회의 안전을 지키기 위해 함께합니다.</h2>
+                            <p>WE ALLKNOW THE WORKD IS NOT STABLE AT THE MOMENT</p>
+                            <h2>DON' T WORRY. WE ARE HERE<br />WE MAKE PEOPLE SAFE.</h2>
                         </div>
                     </div>
                 </main>
@@ -29,10 +29,10 @@ export default function Banner() {
                             <video autoPlay={true} muted={true} loop={true}>
                                 <source src="/images/main-banner.mp4" type="video/mp4" />
                             </video>
-                         </div>
-                        <div className="about-abs">
-                            <h1 className="about-h1">We are the Guardian Angels</h1>
-                            <h2 className="about-h2">가디언엔젤스를 소개합니다.</h2>
+                        </div>
+                        <div>
+                            <p>WE ARE THE GUARDIAN ANGELS</p>
+                            <h2>가디언엔젤스를 소개합니다.</h2>
                         </div>
                     </div>
                 </main>
