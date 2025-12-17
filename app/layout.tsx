@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./style.css";
+import 'aos/dist/aos.css';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 

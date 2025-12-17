@@ -200,6 +200,20 @@ main>div>:last-child h2 {
 
 /* about */
 
+.about-img {
+    padding: 80px 5% 0px;
+}
+
+.about-img>div {
+    display: flex;
+    justify-content: right;
+}
+
+.about-img>div>img {
+    width: 70%;
+    height: auto;
+}
+
 /* .about>:last-child {
     width: 100%;
     height: 300px;
@@ -444,8 +458,9 @@ main>div>:last-child h2 {
         */
 
     /* about */
-
-
+    .about-img>div>img {
+        width: 50%;
+    }
 
     /* gallery */
 
@@ -624,6 +639,17 @@ main>div>:last-child h2 {
 
     .about>div>:last-child {
         margin-top: 0px;
+    }
+    
+    .about-img{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 120px 0 0;
+        margin-bottom: -50px;
+    }
+
+    .about-img>div>img {
+        width: 600px;
     }
 
     /*
