@@ -95,7 +95,6 @@ export default function Home() {
               <h4 data-aos="fade-right"
                 data-aos-easing="ease-out"
                 data-aos-duration="800">WE PROMISE</h4>
-              {/* <h3>매 일상이 절대적으로 안전할 수만은 없습니다. </h3> */}
               <ul data-aos="fade-right"
                 data-aos-easing="ease-out"
                 data-aos-duration="800">

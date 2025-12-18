@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: '가디언엔젤스 코리아',
     description: '지역 사회의 안전을 지키기 위해 함께합니다.',
-    url: 'https://www..com',
+    url: 'https://www.guardianangels.or.kr',
     siteName: 'Guardian Angels Korea',
     images: [
       {
-        url: 'https://www..com/images/og_image.jpg',
+        url: 'https://www.guardianangels.or.kr/images/og_image.jpg',
         width: 1200,
         height: 630,
         alt: '가디언엔젤스 코리아',
